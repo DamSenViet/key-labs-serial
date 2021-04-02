@@ -3,13 +3,12 @@
 
 # Ignore build
 **/build
+**/dist
 **/.env
-
-# Ignore stats
-/stats
 
 # Ignore OS Metadata
 **/.DS_Store
 
 # Ignore Workspace Settings
 **/.vscode
+/tests/index.js
