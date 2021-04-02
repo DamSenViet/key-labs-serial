@@ -1,0 +1,42 @@
+{
+  "include": [
+    "./src/index.ts",
+  ],
+  "exclude": [
+    "./node_modules",
+    "./tests"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    // ### PROJECT OPTIONS
+    //  module type to compile into
+    "module": "ES6",
+    // target javascript version
+    "target": "ES6",
+    "outDir": "./build/esm/",
+    // lib needs to be all ts
+    "allowJs": false,
+    "removeComments": false,
+    // webpack needs this to generate source maps
+    "sourceMap": true,
+    // "declaration": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+    ],
+    "moduleResolution": "node"
+
+    // ### STRICT CHECKS
+    // "alwaysStrict": true,
+    // "noImplicitAny": true,
+    // "noImplicitReturns": true,
+    // "strictPropertyInitialization": true,
+    // "strictFunctionTypes": true,
+    // "strictNullChecks": true,
+
+    // ### ADVANCED
+    // "preserveConstEnums": true,
+  },
+}
